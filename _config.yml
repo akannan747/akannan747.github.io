@@ -8,7 +8,7 @@
 # Site settings
 title: Ashwin's Blog
 email: ashwin.kannan@berkeley.edu
-description: The Jekyll version of the Phantom theme by HTML5 UP.
+description: Ashwin's Blog
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://akannan747.github.io" # the base hostname & protocol for your site
 

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title:  "Made a blog"
 date:   2019-09-18 12:00:00 -0400
 categories: blog
