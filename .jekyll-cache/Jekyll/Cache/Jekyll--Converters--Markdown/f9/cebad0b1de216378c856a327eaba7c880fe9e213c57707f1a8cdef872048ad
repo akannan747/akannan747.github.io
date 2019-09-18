@@ -1,0 +1,15 @@
+I"�<p align="center"><img src="/assets/galaxy_brain.jpg" alt="" /></p>
+<!-- <div class="12u$"><span class="middle"><img src="/images/galaxy_brain.jpg" alt="Galaxy Brain" /></span></div> -->
+<p> Oftentimes I marvel at how truly amazing the human brain is. You can hear a snippet of a song you used to like when you were a child and almost instantly recognize it and begin humming the rest of the song. Easy enough, but if you ask a computer to do the same thing, you begin to realize the complexity of the task. Let’s write some pseudocode that might allow a computer to achieve that level of recognition:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def find_song(song_snippet)
+  for each song that you have ever heard
+    if song contains song_snippet
+      return song
+  return 'can't find it'
+</code></pre></div></div>
+
+<p>In fact, the above might be overly simplifying the problem at hand, since comparing two songs is itself not an easy task. But our brain can do this sort of thing in a fraction of a second. That all being said, lookup is a relatively easy task in which computers usually outperform humans. Where the human brain really shines over computers is our ability to make decisions.</p>
+
+<p>Let’s say that there’s a yacht party happening this coming Friday night. To go, or not to go, that is the question. To make this decision, there’s a number of factors that you’re going to need to know. First; this yacht party is your big chance at a promotion. If you have a good showing, your boss is definitely going to notice all the hard work you put in during the last year. You hate the rain. So you should probably check the weather forecast and make sure that your yacht party isn’t going to be washed out. The last thing you have to worry about is Tanner. He wears the freshest clothes, eats at the chillest restaurants, and hangs out with the hottest dudes. And he bullied you in high school. If Tanner shows up, he’s going to make you look bad in front of your boss.</p>
+:ET
