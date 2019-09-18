@@ -10,20 +10,18 @@ title: Ashwin's Blog
 email: ashwin.kannan@berkeley.edu
 description: The Jekyll version of the Phantom theme by HTML5 UP.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://akannan747.github.io/" # the base hostname & protocol for your site
+url: "https://akannan747.github.io" # the base hostname & protocol for your site
 
 # Logo settings
 logo-image-url: images/logo.svg
 font-awesome-icon-logo:
 
 # Social settings
-# github_username: andrewbanchich
+github_username: akannan747
 # twitter_username: andrewbanchich
 # facebook_URL: andrewbanchich
-# instagram_username: andrewbanchich
-# dribbble_username: andrewbanchich
 # 500px_username: andrewbanchich
-# phone: 555-5555
+phone: 630-788-8850
 
 # Build settings
 markdown: kramdown
