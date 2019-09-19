@@ -4,7 +4,7 @@ title:  "Neural Networks"
 date:   2019-09-18 12:00:00 -0400
 categories: blog
 ---
-<p align="center"><img src="/assets/galaxy_brain.jpg" alt="" /></p>
+<p align="center"><span class="image fit"><img src="/assets/galaxy_brain.jpg" alt="" /></span></p>
 <p>
   Oftentimes I marvel at how truly amazing the human brain is. You can hear a snippet of a song you used to like when you were a child and almost instantly recognize it and begin humming the rest of the song. Easy enough, but if you ask a computer to do the same thing, you begin to realize the complexity of the task. Let's write some pseudocode that might allow a computer to achieve that level of recognition:
 </p>
