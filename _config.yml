@@ -11,6 +11,7 @@ email: ashwin.kannan@berkeley.edu
 description: Wavelength
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://akannan747.github.io" # the base hostname & protocol for your site
+excerpt_separator: excerpt
 
 # Logo settings
 logo-image-url: images/logo.svg

@@ -5,14 +5,40 @@ date:   2019-09-18 12:00:00 -0400
 categories: blog
 ---
 <p align="center"><img src="/assets/galaxy_brain.jpg" alt="" /></p>
-&ensp;Oftentimes I marvel at how truly amazing the human brain is. You can hear a snippet of a song you used to like when you were a child and almost instantly recognize it and begin humming the rest of the song. Easy enough, but if you ask a computer to do the same thing, you begin to realize the complexity of the task. Let's write some pseudocode that might allow a computer to achieve that level of recognition:
-
+<p>
+  Oftentimes I marvel at how truly amazing the human brain is. You can hear a snippet of a song you used to like when you were a child and almost instantly recognize it and begin humming the rest of the song. Easy enough, but if you ask a computer to do the same thing, you begin to realize the complexity of the task. Let's write some pseudocode that might allow a computer to achieve that level of recognition:
+</p>
+  
     def find_song(song_snippet)
       for each song that you have ever heard
         if song contains song_snippet
-          return song
-      return 'can't find it'
-
-In fact, the above might be overly simplifying the problem at hand, since comparing two songs is itself not an easy task. But our brain can do this sort of thing in a fraction of a second. That all being said, lookup is a relatively easy task in which computers usually outperform humans. Where the human brain really shines over computers is our ability to make decisions.
-
-Let's say that there's a yacht party happening this coming Friday night. To go, or not to go, that is the question. To make this decision, there's a number of factors that you're going to need to know. First; this yacht party is your big chance at a promotion. If you have a good showing, your boss is definitely going to notice all the hard work you put in during the last year. You hate the rain. So you should probably check the weather forecast and make sure that your yacht party isn't going to be washed out. The last thing you have to worry about is Tanner. He wears the freshest clothes, eats at the chillest restaurants, and hangs out with the hottest dudes. And he bullied you in high school. If Tanner shows up, he's going to make you look bad in front of your boss. 
+          play song
+      can't find it 
+    
+<p>
+  In fact, the above might be overly simplifying the problem at hand, since comparing two songs is itself not an easy task. But our brain can do this sort of thing in a fraction of a second. That all being said, lookup is a relatively easy task in which computers usually outperform humans. Where the human brain really shines over computers is our ability to make decisions.
+</p>
+<p>
+  Let's say that there's a yacht party happening this coming Friday night. To go, or not to go, that is the question. To make this decision, there's a number of factors that we're going to need to know. First; this yacht party is our big chance at a promotion. If our boss shows, we're definitely going to be able to show him all the hard work we put in during the last year and bring home the big bucks. We hate the rain. So we should probably check the weather forecast and make sure that our yacht party isn't going to rain on us. The last thing we have to worry about is Tanner. He wears the freshest clothes, eats at the chillest restaurants, and hangs out with the hottest dudes. And he bullied us in high school. If Tanner shows up, he might make us look bad in front of our boss. 
+</p>
+<p>
+  Now that we have all of this information, we can make a decision. This promotion is pretty important to us, so our boss being at this yacht party plays a bigger role in our choice than either Tanner or the weather. We're willing to tolerate Tanner if it means a promotion, and we're willing to get drenched in the rain for it too. But Tanner AND the rain would be too much of a dampener on our day; that's the one situation in which we'd skip the yacht. So we know how WE would make our choice. How can we get a computer to replicate that? 
+</p>
+<p>
+  We could start by assigning a value to each factor showing how much weight they have in our final decision. Let's give Tanner a weight of -3, the weather a weight of -3, and our boss a weight of 5. This makes sense, because the presence of our boss has a bigger positive weight on our decision than the negative weights of Tanner's presence or bad weather. Then let's define three binary variables; x, y, and z for Tanner, the weather, and our boss respectively. 
+</p>
+<ul>
+  <li>x will equal 0 if Tanner doesn't show up or 1 if Tanner does show up.</li> 
+  <li>y will equal 0 if the weather is clear or 1 if the weather is bad.</li>
+  <li>z will equal 0 if our boss doesn't show up, or 1 if he does.</li>
+</ul>
+<p>
+  Now to make our decision we multiply the inputs x, y, z with their relative weights. If the result is less than 0, we stay home and skip the party. If the result is greater than 0, it's party time! You should be able to prove to yourself pretty quickly that if our boss shows up, it would require both Tanner and the rain to stop you from your promotion. 
+</p>
+<ul>
+  <li>X * Wtanner + Y * Wweather + Z * Wboss</li>
+  <li>1 * -3 + 1 * -3 + 1 * 5 = -1</li>
+</ul>
+<p>
+  That's just what we wanted! What's even more cool is that we just created an artificial neuron called a perceptron. More about those in a future blog post. The important thing is that we just created a function that does exactly what we wanted it to do; make decisions based on relevant factors, in a way similar to how a human might make them. This neuron is our first step towards neural networks.
+</p>
