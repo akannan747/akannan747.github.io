@@ -72,8 +72,8 @@ $$\begin{array}{cc}
   Now to make our decision we multiply the inputs x, y, z with their relative weights. If the result is less than 0, we stay home and skip the party. If the result is greater than 0, it's party time! You should be able to prove to yourself pretty quickly that if our boss shows up, it would require both Tanner and the rain to stop you from your promotion. 
 </p>
 <p>
-  $$X * W_{Tanner} + Y * W_{weather} + Z * W_{boss}$$
-  $$1 * -3 + 1 * -3 + 1 * 5 = -1$$
+  $$\text{decision} = X * W_{Tanner} + Y * W_{weather} + Z * W_{boss}$$
+  $$\text{decision} = 1 * -3 + 1 * -3 + 1 * 5 = -1$$
 </p>
 <p>
   That's just what we wanted! What's even more cool is that we just created an artificial neuron called a perceptron. More about those in a future blog post. The important thing is that we just created a function that does exactly what we wanted it to do; make decisions based on relevant factors, in a way similar to how a human might make them. This neuron is our first step towards neural networks.
