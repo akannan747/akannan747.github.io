@@ -12,7 +12,7 @@ comments: true
 
 <span class="image center"><img src="/assets/galaxy_brain.jpg" alt="" /></span>
 <!--more-->
-<h2>An Introduction to Neural Networks</h2>
+<h2 class="align-center">An Introduction to Neural Networks</h2>
 <p>
   Oftentimes I marvel at how truly amazing the human brain is. You can hear a snippet of a song you used to like when you were a child and almost instantly recognize it and begin humming the rest of the song. Easy enough, but if you ask a computer to do the same thing, you begin to realize the complexity of the task. Let's write some pseudocode that might allow a computer to achieve that level of recognition:
 </p>
