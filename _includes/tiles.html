@@ -7,9 +7,9 @@
 		</span>
 		<a href="{{ post.url | prepend:site.baseurl | prepend:site.url }}">
 			<h2>{{ post.title }}</h2>
-			<!-- <div class="content">
-				<p>{{ post.excerpt }}</p>
-			</div> -->
+			<div class="content">
+				<p>{{ post.content | split: '<!--more-->' | first }}</p>
+			</div>
 		</a>
 	</article>
 {% endfor %}
