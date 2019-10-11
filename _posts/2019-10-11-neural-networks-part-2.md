@@ -46,4 +46,10 @@ $$\begin{array}{cc}
 So how powerful is a perceptron, exactly? 
 
 <span class="image center"><img src="/assets/network.png" alt="" /></span>
+
+Here we have a network of perceptrons. If we have accepted the basic premise that perceptrons can take evidence and weigh it up to arrive at decisions, it makes sense that a group of such neurons could make more complex decisions with more factors. Generally, networks of perceptrons contain a series of layers, each layer having a different set of perceptrons with their own biases and weights. In this example, the network has 3 layers; the first column is the input layer, the last column is the output layer, and everything in between are called hidden layers. 
+<br><br>
+What makes a neural network tick is that we can train networks to figure out what weights result in the greatest number of correct classifications, making slight adjustments to fine-tune our model. 
+<br><br>
+So while we can see how powerful perceptrons could be in complex networks, to truly see the power of an individual perceptron, we need to discuss NAND gates. I'll go in depth in a future blog post, but the basics are as follows: in Boolean logic, there is an operator called NAND. It takes in 2 binary inputs, and only returns false if both inputs are true; it's the complement of AND. What's very cool about NAND is that every other function in Boolean logic can be represented using combinations of NAND gates. Any computation can be represented as a series of NANDs. Furthermore, a NAND gate can be modeled using a perceptron. 
 </p>
